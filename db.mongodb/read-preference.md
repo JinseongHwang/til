@@ -1,5 +1,7 @@
 ## Read Preference
 
+![Alt text](https://www.mongodb.com/docs/manual/images/replica-set-read-preference.bakedsvg.svg)
+
 예를 들어, MongoDB 클러스터가 원본 1대 + 복제본 1대, 총 2대로 구성되어 있다고 가정해보자. 일반적으로 역할은 다음과 같이 구분된다.
 - 원본: Write 작업, 클러스터 내 복제본으로 Data Sync
 - 복제본: Read 작업
