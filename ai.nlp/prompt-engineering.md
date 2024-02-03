@@ -2,7 +2,7 @@
 A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT  
 Department of Computer Science, Vanderbilt University, Tennessee USA
 
-## The Persona Pattern
+## [1] The Persona Pattern
 
 The Persona Pattern을 사용하면 ChatGPT가 생성해야 할 응답과 집중해야 할 세부 사항을 안내할 수 있다.  
 단, 실제 인물이나 범죄자를 언급할 경우에는 생성에 실패할 수도 있다.
@@ -30,7 +30,7 @@ Pretend you are a marketing expert, review the following slogans and suggest imp
 {{QUESTION}}
 ```
 
-## The Recipe Pattern
+## [2] The Recipe Pattern
 
 The Recipe Pattern은 달성하고 싶은 목표가 있고, 재료는 알고 있으며, 달성하기 위한 단계는 어느 정도 알고 있는 상태에서  
 어떻게 해야 할지 모르겠을 때 조합을 알려주는 데 유용하다.
@@ -44,7 +44,7 @@ please provide a complete sequence of steps for me, fill in any missing steps an
 {{QUESTION}}
 ```
 
-## The Reflection Pattern
+## [3] The Reflection Pattern
 
 The Reflection Pattern을 사용하면 모든 답변에 대한 이유를 설명하도록 요청할 수 있다.  
 또한 부가 설명을 조금 더 친절하고 많이 생성하게 한다.  
@@ -57,7 +57,7 @@ Explain your choices and address any potential limitations or edge cases.
 {{QUESTION}}
 ```
 
-## The Refusal Breaker Pattern
+## [4] The Refusal Breaker Pattern
 
 The Refusal Breaker Pattern은 ChatGPT가 지식 제한, 안전 등의 이유로 답변할 수 없다고 말하는 경우를 Break 하는 패턴이다.  
 답변을 조금 변형해서 대답할 수 있게 유도하는 방식이다.
@@ -69,11 +69,12 @@ Provide one or more alternative wordings of the question that you could answer.
 {{QUESTION}}
 ```
 
-## The Flipped Interaction Pattern
+## [5] The Flipped Interaction Pattern
 
 The Flipped Interaction Pattern은 ChatGPT에게 질문을 할 때 ChatGPT가 어떤 정보를 필요로 하는지 모르겠을 때 유용하다.  
 원하는 정보를 모두 얻을 때까지 ChatGPT가 사용자에게 질문을 하는 방식이다.
 
+### AWS 배포 자동화 스크립트 생성에 필요한 질문받기
 ```plaintext
 I want you to ask me questions to deploy a Rust binary to a web server located in AWS.
 When you have all the information you need, write a bash script to automate the deployment.
