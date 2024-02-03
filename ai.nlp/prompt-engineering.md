@@ -1,10 +1,10 @@
 ## 출처
-A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT
+A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT  
 Department of Computer Science, Vanderbilt University, Tennessee USA
 
 ## The Persona Pattern
 
-The Persona Pattern을 사용하면 ChatGPT가 생성해야 할 응답과 집중해야 할 세부 사항을 안내할 수 있다.
+The Persona Pattern을 사용하면 ChatGPT가 생성해야 할 응답과 집중해야 할 세부 사항을 안내할 수 있다.  
 단, 실제 인물이나 범죄자를 언급할 경우에는 생성에 실패할 수도 있다.
 
 ### 코드 리뷰 요청하기
