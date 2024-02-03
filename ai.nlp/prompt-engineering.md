@@ -1,5 +1,5 @@
 ## 출처
-A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT ([link](https://arxiv.org/pdf/2302.11382.pdf))  
+A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT ([arxiv](https://arxiv.org/pdf/2302.11382.pdf))  
 Department of Computer Science, Vanderbilt University, Tennessee USA
 
 ## [1] The Persona Pattern
