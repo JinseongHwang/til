@@ -23,3 +23,5 @@
 ## 4. 효율적인 자료구조
 
 - ZipList, SkipList, HashTable 등 여러 가지 효율적인 데이터 구조를 사용한다.
+
+출처: https://youtu.be/5TRFpFBccQM
