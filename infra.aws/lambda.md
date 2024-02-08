@@ -26,7 +26,8 @@
 ## Lambda 성능 vs 비용 최적치 알아내기
 
 - Lambda Power Tuning 을 사용하면 성능, 비용 대비 최적치를 알려준다.
-- [s12d.com.com/lambda-power-tuning](http://s12d.com.com/lambda-power-tuning)
+- https://github.com/alexcasalboni/aws-lambda-power-tuning
+    - AWS에서 공식적으로 밀어주는 프로젝트이다.
 
 ## 프로비저닝 컨텍스트는 어디에 저장되고 얼마나 유지되는가?
 
