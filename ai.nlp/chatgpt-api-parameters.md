@@ -1,5 +1,27 @@
 ## ChatGPT API 파라미터
 
+- [ChatGPT API 파라미터](#chatgpt-api-파라미터)
+  - [Create chat completion](#create-chat-completion)
+  - [1. `messages` / \[array\] / Required](#1-messages--array--required)
+  - [2. `model` / \[string\] / Required](#2-model--string--required)
+  - [3. `frequency_penalty` / \[number or null\] / Optional](#3-frequency_penalty--number-or-null--optional)
+  - [4. `logit_bias` / \[map\] / Optional](#4-logit_bias--map--optional)
+  - [5. `logprobs` / \[boolean or null\] / Optional](#5-logprobs--boolean-or-null--optional)
+  - [6. `top_logprobs` / \[integer or null\] / Optional](#6-top_logprobs--integer-or-null--optional)
+  - [7. `max_tokens` / \[integer or null\] / Optional](#7-max_tokens--integer-or-null--optional)
+  - [8. `n` / \[integer or null\] / Optional](#8-n--integer-or-null--optional)
+  - [9. `presence_penalty` / \[number or null\] / Optional](#9-presence_penalty--number-or-null--optional)
+  - [10. `response_format` / \[object\] / Optional](#10-response_format--object--optional)
+  - [11. `seed` / \[integer or null\] / Optional](#11-seed--integer-or-null--optional)
+  - [12. `stop` / \[string / array / null\] / Optional](#12-stop--string--array--null--optional)
+  - [13. `stream` / \[boolean or null\] / Optional](#13-stream--boolean-or-null--optional)
+  - [14. `temperature` / \[number or null\] / Optional](#14-temperature--number-or-null--optional)
+  - [15. `top_p` / \[number or null\] / Optional](#15-top_p--number-or-null--optional)
+  - [16. `tools` / \[array\] / Optional](#16-tools--array--optional)
+  - [17. `tool_choice` / \[string or object\] / Optional](#17-tool_choice--string-or-object--optional)
+  - [18. `user` / string / Optional](#18-user--string--optional)
+- [References](#references)
+
 ### Create chat completion
 ```sh
 curl https://api.openai.com/v1/chat/completions \
