@@ -64,10 +64,10 @@ system에는 GPT의 페르소나 설정을 진행하고, user에는 명령을 �
 
 입력 값은 JSON 형식이고, Key는 token_id, Value는 -100과 100 사이의 정수이다. Value가 커질수록(양수) 선호의 의미이고, 낮아질수록(음수) 기피의 의미이다.
 
-![스크린샷](https://github.com/JinseongHwang/til/assets/132965185/1113e84c-f78e-438e-84b5-1c2de0882683)
+![스크린샷](https://github.com/JinseongHwang/til/assets/132965185/1113e84c-f78e-438e-84b5-1c2de0882683)  
 token_id는 [OpenAI Tokenizer](https://platform.openai.com/tokenizer)에서 알아낼 수 있다. 예를 들어 pizza는 93538이다. 따라서 아래와 같이 작성하면 pizza의 선호 혹은 기피를 제안할 수 있다.
 
-![스크린샷](https://github.com/JinseongHwang/til/assets/132965185/0e211173-76a5-4536-af2f-ce3af5f47e4c)
+![스크린샷](https://github.com/JinseongHwang/til/assets/132965185/0e211173-76a5-4536-af2f-ce3af5f47e4c)  
 단, 한국어는 제약 사항이 많아서 제대로 동작하지 않는다. 예시의 "호박고구마" 라는 하나의 단어가 7개의 토큰으로 분리된다. 각 토큰 별로 선호 및 기피 제어는 가능하지만, 예시처럼 하나의 단어가 여러 토큰으로 쪼개지는 경우 이 파라미터를 조절하면 나와야 할 글자가 나오지 않거나 이상한 글자가 계속 나올 수도 있다. 따라서 꼭 Tokenizer에서 잘 나오는지 확인해 보고 사용하자.
 
 ### 5. `logprobs` / [boolean or null] / Optional
