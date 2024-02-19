@@ -20,6 +20,7 @@
   - [16. `tools` / \[array\] / Optional](#16-tools--array--optional)
   - [17. `tool_choice` / \[string or object\] / Optional](#17-tool_choice--string-or-object--optional)
   - [18. `user` / string / Optional](#18-user--string--optional)
+- [top\_p vs temperature](#top_p-vs-temperature)
 - [References](#references)
 
 ### Create chat completion
@@ -228,6 +229,11 @@ json 모드를 사용할 때는 system 또는 user 메시지를 통해 모델에
 "user": "jinseong-only"
 ```
 최종 사용자를 나타내는 고유 식별자이다. OpenAI 측에서 남용하는지 모니터링 할 때 사용한다.
+
+## top_p vs temperature
+
+- https://community.openai.com/t/cheat-sheet-mastering-temperature-and-top-p-in-chatgpt-api/172683
+- https://medium.com/@1511425435311/understanding-openais-temperature-and-top-p-parameters-in-language-models-d2066504684f
 
 ## References
 - https://platform.openai.com/docs/api-reference/chat/create
