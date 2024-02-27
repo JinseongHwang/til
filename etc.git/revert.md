@@ -28,12 +28,17 @@ bbb222 뭘 먹어야
 ccc333 오늘 저녁은
 ```
 
-ccc333 커밋이 완료된 시점으로 되돌아 가고 싶다면? 그럼 2개의 커밋을 되돌리면 된다.
+`ccc333` 커밋이 완료된 시점으로 되돌아 가고 싶다면? 그럼 2개의 커밋을 되돌리면 된다.
 
 ```sh
 $ git revert --no-commit aaa111
 $ git revert --no-commit bbb222
 $ git commit -m "Revert 2 recent commits"
+
+$ git log --oneline -n 2
+
+abc123 (HEAD) Revert 2 recent commits
+ccc333 오늘 저녁은
 ```
 
 위와 같이 요래요래 하면 2개의 커밋을 되돌리면서 커밋 히스토리에는 1개만 남겨진다.
