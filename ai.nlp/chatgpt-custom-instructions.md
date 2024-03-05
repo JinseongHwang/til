@@ -8,12 +8,12 @@ Custom Instructions을 편집할 때마다 새로 만드는 모든 채팅에 적
 
 ChatGPT에게 내가 누구인지 뭐 하는 사람이고 어떤 것에 관심있는지 미리 알려주는 과정이다. 배경 지식들을 미리 알려주면 내가 어떤 답변을 원하는지 파악하기가 훨씬 쉬워진다. 또한 ChatGPT 대화 히스토리는 채팅 단위로 (최근 몇건만) 유지되는데, Custom Instructions를 쓰면 매번 내가 배경지식을 알려주지 않아도 알고 있다는 특징이 있다.
 
-내부적으로 모델에 주입하는 경로가 있을 것으로 추측된다. 답변을 더 정교하게 만들기 위해서라면 안 쓸 이유가 없다!
+**내부적으로 모델에 주입하는 경로가 있을 것으로 추측된다. 답변을 더 정교하게 만들기 위해서라면 안 쓸 이유가 없다!**
 
 2가지 질문에 대해 답을 작성하면 된다.
-1. What would you like ChatGPT to know about you to provide better responses?
+1. What would you like ChatGPT to know about you to provide better responses?  
     (더 나은 대답을 위해 ChatGPT가 어떤 정보를 알고 있으면 될까요?)
-2. How would you like ChatGPT to respond?
+2. How would you like ChatGPT to respond?  
     (ChatGPT가 어떻게 대답하길 원하시나요?)
 
 각 질문에 알맞게 나의 요청을 넣으면 된다.
