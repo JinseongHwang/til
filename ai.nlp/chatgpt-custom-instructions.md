@@ -1,5 +1,7 @@
 ## ChatGPT Custom Instructions
 
+설정은 PC 브라우저 기준, [좌측 하단 이름] > [Customize ChatGPT] 에서 할 수 있습니다.
+
 ```
 # 설명 원문 (한국어 번역)
 채팅에 대한 구체적인 세부 사항과 가이드라인을 제공하여 ChatGPT와의 상호작용을 맞춤 설정하세요.
