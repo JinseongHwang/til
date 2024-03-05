@@ -65,6 +65,3 @@ Take a deep breath, and work on this step by step.
 
 ### References
 https://help.openai.com/en/articles/8096356-custom-instructions-for-chatgpt
-
-
-commit test2
