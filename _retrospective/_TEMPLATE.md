@@ -1,14 +1,8 @@
-## Keep
-- 
-
-## Problem
-- 
-
-## Try
-- 
-
-## Etc
-- 
-
-## Score
-[n / 10]
+* 이번주 점수
+    * 
+* Keep
+    * 
+* Problem
+    * 
+* Try
+    * 
