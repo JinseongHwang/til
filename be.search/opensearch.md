@@ -43,7 +43,7 @@ https://aws.amazon.com/ko/opensearch-service/pricing/
 - 저렴하게 테스트 한다면 요약에 맞게 맞춰 생성하자.
 - 이렇게만 설정해도 만드는데 시간이 꽤 걸린다. (약 30분)
 
-![img](https://github.com/JinseongHwang/til/assets/52629158/3e49ac73-5dfc-43ef-ba80-b3f5313e4d8a)
+![img](https://github.com/JinseongHwang/til/assets/52629158/46b637c1-27b5-458f-843f-3a6b24618e1b)
 - 그리고 보안 정책도 삭제해줘야 진정한 Public URL로 모든 것이 접근 가능하다.
 
 ## 대시보드 살펴보기
