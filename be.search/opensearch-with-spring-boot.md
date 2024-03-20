@@ -67,9 +67,9 @@ class OpensearchConfig(
 ) : AbstractOpenSearchConfiguration() {
 
     override fun opensearchClient(): RestHighLevelClient {
-        val credentialsProvider = org.apache.http.impl.client.BasicCredentialsProvider()
-        val credentials = org.apache.http.auth.UsernamePasswordCredentials(property.username, property.password)
-        credentialsProvider.setCredentials(org.apache.http.auth.AuthScope.ANY, credentials)
+        val credentials = UsernamePasswordCredentials(property.username, property.password)
+        val credentialsProvider = BasicCredentialsProvider()
+        credentialsProvider.setCredentials(AuthScope.ANY, credentials)
 
         val builder = RestClient.builder(
             HttpHost.create(property.host)
