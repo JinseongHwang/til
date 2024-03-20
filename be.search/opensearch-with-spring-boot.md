@@ -1,5 +1,8 @@
 ## AWS Opensearch와 Spring Boot 통합하기
 
+전체 코드는 [여기](https://github.com/JinseongHwang/spring-boot-opensearch-poc)로    
+근데 당분간 계속 추가될 예정  
+
 ## 1. 의존성 추가
 
 **build.gradle.kts**
