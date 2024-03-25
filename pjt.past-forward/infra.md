@@ -29,5 +29,15 @@
 - 이미지 등 정적 리소스를 저장할 S3 버킷을 생성한다.
 - RDBMS 관리형 서비스인 RDS 인스턴스를 생성한다.
 
-
-
+## 6. 천천히 서버리스로 전환 준비하자.
+- 천천히 Lambda + Spring Boot PoC 진행해보자.
+- (EC2 + Spring MVC + JPA를 사용한다고 가정) 상태를 유지가 필요한 Tomcat Thread Pool, HikariCP는 어떻게 처리하는 게 좋을까?
+  - Tomcat Thread Pool
+    - 오랫동안 실행되면서 요청을 동시에 처리하기 위해 스레드 풀을 관리한다.
+    - 하지만 람다는 요청 1개당 1개의 함수가 실행되는 방식이기 때문에 Thread Pool 혹은 유사한 것이 필요없다.
+  - HikariCP
+    - RDS의 커넥션을 HikariCP가 미리 만들어서 관리하고 있었다.
+    - 하지만 Lambda는 커넥션을 유지할 수 없다. 따라서 RDS Proxy를 사용해서 람다 외부의 커넥션 관리 서비스를 사용하면 된다.
+- AWS API Gateway를 사용해서 REST API 인터페이스를 갖추고 람다를 트리거하자.
+- AWS Lambda Handler를 빈으로 등록해서 사용할 수 있게 해주는 [Spring Cloud Function](https://spring.io/projects/spring-cloud-function)도 있다.
+- Snap Start 기능은 반드시 사용하자. 특히 JVM App이라면 더욱 더!!
