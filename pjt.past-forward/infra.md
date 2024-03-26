@@ -41,3 +41,9 @@
 - AWS API Gateway를 사용해서 REST API 인터페이스를 갖추고 람다를 트리거하자.
 - AWS Lambda Handler를 빈으로 등록해서 사용할 수 있게 해주는 [Spring Cloud Function](https://spring.io/projects/spring-cloud-function)도 있다.
 - Snap Start 기능은 반드시 사용하자. 특히 JVM App이라면 더욱 더!!
+
+참고
+- https://www.baeldung.com/spring-boot-aws-lambda
+- https://www.lgcns.com/blog/cns-tech/aws-ambassador/48783/
+- https://www.lgcns.com/blog/cns-tech/aws-ambassador/49072/
+- https://medium.com/harrythegreat/aws-서버리스를-위한-rds-proxy서비스-fb5815b83cce
