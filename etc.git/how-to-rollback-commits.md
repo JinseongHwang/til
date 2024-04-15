@@ -42,3 +42,25 @@ ccc333 오늘 저녁은
 ```
 
 위와 같이 요래요래 하면 2개의 커밋을 되돌리면서 커밋 히스토리에는 1개만 남겨진다.
+
+---
+
+그럼에도 불구하고 github에 올라간 커밋을 정리하고 싶다면,
+
+1. 커밋 내역을 살펴보자
+```Shell
+git reflog
+```
+살펴보다가 이동하고 싶은 커밋 시점의 커밋 해시를 복사해두자.
+
+2. hard reset을 하자
+```Shell
+git reset --hard {commit-hash}
+```
+로컬에서 우선 커밋을 되돌려보자. 잘 되돌아갔는지 확인하자.
+
+3. 강제로 github에 동기화하자.
+```Shell
+git push origin {branch-name} --force
+```
+로컬에서 문제 없다면 force push를 통해 github에 강제로 동기화해주자.
