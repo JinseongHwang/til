@@ -39,3 +39,11 @@ $ git push origin --delete my-branch
 # After
 $ git push origin :my-branch
 ```
+
+## 이전 브랜치로 되돌아가기
+```sh
+git switch -
+git checkout -
+```
+
+-  둘 다 가능하다.
