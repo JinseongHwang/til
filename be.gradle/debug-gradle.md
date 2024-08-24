@@ -55,3 +55,4 @@ Caused by: java.lang.NoClassDefFoundError: javax/persistence/Entity
 - 수백줄 쭈르륵 나오다가 요런 부분을 찾았다.
 - 아! QueryDSL 쪽에서 문제가 있음을 알게 됐다.
 - 사막에서 바늘 찾기 문제가, 내 방에서 바늘 찾기 문제로 바뀌었다.
+  - fyi. 내 방은 약 5평이다.
