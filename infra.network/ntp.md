@@ -52,6 +52,14 @@ Java에서는 시간을 참조하는 방법으로 2가지를 살펴보자.
 - 현재 시간을 나타낼 수 있다.
 - NTP에 의해 주기적으로 조정되는 시스템 시계에 의존한다. 따라서 상대적으로 정확도가 낮다.
 
+```java
+long startTime = System.currentTimeMillis();
+sleep(10000); // 10s
+long endTime = System.currentTimeMillis();
+long elapsedTime = endTime - startTime;
+```
+- 심지어 10초를 쉬었지만 중간에 NTP와 시간 조정이 발생한다면 elapsedTime이 음수값이 나올 수 있다는 의미이다.
+
 ## System.nanoTime() 의 특징은 ?
 
 - 현재 시간(혹은 Unix Epoch)과 상관없이 경과한 시간을 측정하는 값(ns)이다. (보통은 컴퓨터가 부팅된 시간부터)
@@ -59,6 +67,14 @@ Java에서는 시간을 참조하는 방법으로 2가지를 살펴보자.
 - 어떤 연산이 얼마나 걸렸는지 정밀하게 측정할 때 사용한다.
 - 시스템 시간이 바뀌어도 영향을 받지 않는다. 강조하지만 현재 시간과는 무관한 값이다.
 - 실제로 나노초 단위로 동작하진 않지만 밀리초보다는 훨씬 정밀하다.
+
+```java
+long startTime = System.nanoTime();
+sleep(10000); // 10s
+long endTime = System.nanoTime();
+long elapsedTime = endTime - startTime;
+```
+- 여기서는 elapsedTime이 항상 양수이다.
 
 ## LocalDateTime.now() 는 어떤걸 참조할까 ?
 
